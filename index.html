@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to bottom, rgb(212, 8, 253) , rgb(0, 204, 255));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 400px;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: rgb(48, 0, 102);
+        }
+
+        .container h2 {
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(38, 0, 82);
+            text-align: center;
+            
+        }
+
+        form {
+            padding: 25px 35px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=weight] {
+            height: 35px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        input::placeholder {
+            color: rgb(190, 184, 177);
+            padding-left: 10px;
+        }
+
+        input[type=checkbox]{
+            border: none;
+            outline: none;
+        }
+
+        div {
+            position: relative;
+            color: white;
+            margin-bottom: 40px;
+        }
+        span{
+            position: absolute;
+            top: 0;
+            font-size: 12px;
+            width: 275px;
+            display: inline-block;
+            margin: 0 0 20px 20px;
+        }
+        .btn{
+            padding: 7px 27px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            float: right;
+            background: linear-gradient(to bottom, rgb(0, 253, 0) 65%, rgba(8, 255, 8, 0.747) 35%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+           First name : <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+
+           Last name : <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+
+           Email :<input type="email" id="email" name="email" placeholder="Email" required>
+
+             Password :<input type="password" id="password" name="password" placeholder="Password" required>
+
+           Weight : <input type="number" id="text" name="text" placeholder="weight" required>
+            
+            <input type="file" id="upload" name="upload" placeholder="upload" required>
+
+            <div>
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+                <span> accusantium id molestiae sed ettr eer lorem yure ree  er trgr hfyy kdddy libero.</span>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox1" name="checkbox1">
+                <span> dolores molestiae sed arto vitae try fu ewtyr   rewr rewr laboriosam.</span>
+            </div>
+
+
+            <input type="submit" value="Register" class="btn">
+        </form>
+
+    </div>
+</body>
+
+</html>
